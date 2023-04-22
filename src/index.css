@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.secondary-text{
+  @apply text-sm font-medium text-gray-500 font-serif my-1
+}
