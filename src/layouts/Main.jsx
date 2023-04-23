@@ -1,12 +1,13 @@
 import Header from '../components/Header';
 import { Outlet } from 'react-router-dom';
+import Home from '../components/Home';
 
 const Main = () => {
     return (
         <div className='max-w-[1200px] mx-auto'>
             <Header></Header>
             <div>
-                <Outlet></Outlet>
+                <Home></Home>
             </div>
         </div>
     );
