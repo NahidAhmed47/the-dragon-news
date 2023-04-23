@@ -9,6 +9,8 @@ import Main from './layouts/Main';
 import Home from './components/Home';
 import About from './components/About';
 import Career from './components/Career';
+import Login from './components/Login';
+import Register from './components/Register';
 
 const router = createBrowserRouter([
   {
@@ -26,6 +28,14 @@ const router = createBrowserRouter([
       {
         path:'career',
         element:<Career></Career>
+      },
+      {
+        path:'login',
+        element:<Login></Login>
+      },
+      {
+        path:'register',
+        element:<Register></Register>
       }
     ]
   }

@@ -1,6 +1,7 @@
 import moment from 'moment';
 import Marquee from "react-fast-marquee";
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+import { FaUserAlt} from "react-icons/fa";
 
 const Header = () => {
     return (
@@ -25,8 +26,9 @@ const Header = () => {
                     <NavLink to='/about'>About</NavLink>
                     <NavLink to='/career'>Career</NavLink>
                 </ul>
-                <div className=''>
-                    <button className="my-btn">Login</button>
+                <div className='flex items-center gap-4'>
+                    <Link to="/profile" title='My Profile'><FaUserAlt className='w-6 h-6'></FaUserAlt></Link>
+                    <Link to="/login"><button className="my-btn">Login</button></Link>
                 </div>
              </div>
         </div>
