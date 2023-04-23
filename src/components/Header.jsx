@@ -1,4 +1,3 @@
-import React from 'react';
 import moment from 'moment';
 import Marquee from "react-fast-marquee";
 import { NavLink } from 'react-router-dom';
@@ -22,9 +21,9 @@ const Header = () => {
 
                 </div>
                 <ul className='text-base font-medium gap-4 flex font-serif text-gray-700 mx-auto'>
-                    <NavLink>Home</NavLink>
-                    <NavLink>About</NavLink>
-                    <NavLink>Career</NavLink>
+                    <NavLink to='/'>Home</NavLink>
+                    <NavLink to='/about'>About</NavLink>
+                    <NavLink to='/career'>Career</NavLink>
                 </ul>
                 <div className=''>
                     <button className="my-btn">Login</button>
